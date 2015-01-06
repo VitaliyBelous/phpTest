@@ -1,0 +1,78 @@
+/* line 1, ../scss/style.scss */
+html, body {
+  height: 100%;
+  font: 11px Tahoma, Sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+/* line 8, ../scss/style.scss */
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  width: 1000px;
+  margin: auto;
+}
+
+/* line 15, ../scss/style.scss */
+.main {
+  padding-bottom: 60px;
+}
+
+/* line 19, ../scss/style.scss */
+.header {
+  background-color: darkslateblue;
+  height: 100px;
+}
+/* line 22, ../scss/style.scss */
+.header p {
+  font-size: 20px;
+  padding-top: 35px;
+}
+
+/* line 28, ../scss/style.scss */
+.content {
+  width: 1000px;
+  margin: auto;
+  height: 100%;
+}
+/* line 32, ../scss/style.scss */
+.content h1 {
+  border: dotted 1px red;
+}
+
+/* line 37, ../scss/style.scss */
+.links {
+  margin-top: 20px;
+  padding: 5px 0;
+  border: 1px solid darkred;
+}
+/* line 41, ../scss/style.scss */
+.links a {
+  margin: 0 200px;
+}
+
+/* line 46, ../scss/style.scss */
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 51, ../scss/style.scss */
+th {
+  color: #000099;
+}
+
+/* line 55, ../scss/style.scss */
+form {
+  margin: 10px 0;
+}
+
+/* line 59, ../scss/style.scss */
+.footer {
+  width: 1000px;
+  background-color: darkslateblue;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+}

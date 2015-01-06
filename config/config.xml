@@ -1,0 +1,7 @@
+<database>
+    <host>localhost</host>
+    <charset>utf-8</charset>
+    <db_name>test</db_name>
+    <user>VitalikB</user>
+    <password>30111987</password>
+</database>

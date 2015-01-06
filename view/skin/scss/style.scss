@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+  font: 11px Tahoma, Sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  width: 1000px;
+  margin: auto;
+}
+
+.main {
+  padding-bottom: 60px;
+}
+
+.header {
+  background-color: darkslateblue;
+  height: 100px;
+  p {
+    font-size: 20px;
+    padding-top: 35px;
+  }
+}
+
+.content {
+  width: 1000px;
+  margin: auto;
+  height: 100%;
+  h1 {
+    border: dotted 1px red;
+  }
+}
+
+.links {
+  margin-top: 20px;
+  padding: 5px 0;
+  border: 1px solid darkred;
+  a {
+    margin: 0 200px;
+  }
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  color: #000099;
+}
+
+form {
+  margin: 10px 0;
+}
+
+.footer {
+  width: 1000px;
+  background-color: darkslateblue;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+}
