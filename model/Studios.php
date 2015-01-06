@@ -6,7 +6,9 @@ include($_SERVER['DOCUMENT_ROOT'] . '/classloader.php');
 
 class Studios extends Database
 {
-
+    /**
+     * @return bool|\PDOStatement
+     */
     public function getStudio()
     {
         $query = false;

@@ -6,6 +6,9 @@ include($_SERVER['DOCUMENT_ROOT'] . '/classloader.php');
 
 class Actors extends Database
 {
+    /**
+     * @return bool|\PDOStatement
+     */
     public function getFee()
     {
         $connection = $this->getConnection();

@@ -8,6 +8,9 @@ use \PDO;
 
 class Database extends Config
 {
+    /**
+     * @return bool|PDO
+     */
     public function getConnection()
     {
         $pdo = false;
