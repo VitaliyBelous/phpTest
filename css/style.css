@@ -1,0 +1,30 @@
+html,body{
+    height: 100%;
+    font: 11px Tahoma, Sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+}
+body,
+ul,
+li,
+input,
+button,
+p{
+    margin: 0;
+    padding: 0;
+}
+.content h1 {
+    width: 1000px;
+    height: 100%;
+    border: dotted 1px red;
+    margin: auto;
+}
+
+a {
+    margin: 0 210px;
+}
+
+.links {
+    width: 1000px;
+    margin: auto;
+}
