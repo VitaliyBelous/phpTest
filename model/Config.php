@@ -38,7 +38,7 @@ abstract class Config
 
     /**
      * @return string
-     */+6
+     */
     protected function getDbName()
     {
         $config = $this->getConfig();
