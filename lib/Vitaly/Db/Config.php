@@ -1,8 +1,8 @@
 <?php
 
-namespace Model;
+namespace Vitaly\Db;
 
-abstract class Config
+class Config
 {
     protected $host;
     protected $charset;
@@ -15,51 +15,51 @@ abstract class Config
      */
     private function getConfig()
     {
-        return $config = simplexml_load_file($_SERVER['DOCUMENT_ROOT'] . '/config/config.xml');
+        return $config = simplexml_load_file($_SERVER['DOCUMENT_ROOT'] . '/app/config.xml');
     }
 
     /**
      * @return string
      */
-    protected function getHost()
+    public function getHost()
     {
         $config = $this->getConfig();
-        return $this->host = (string)$config->host;
+        return $this->host = (string) $config->host;
     }
 
     /**
      * @return string
      */
-    protected function getCharset()
+    public function getCharset()
     {
         $config = $this->getConfig();
-        return $this->charset = (string)$config->charset;
+        return $this->charset = (string) $config->charset;
     }
 
     /**
      * @return string
      */
-    protected function getDbName()
+    public function getDbName()
     {
         $config = $this->getConfig();
-        return $this->dbName = (string)$config->db_name;
+        return $this->dbName = (string) $config->db_name;
     }
 
     /**
      * @return string
      */
-    protected function getUser()
+    public function getUser()
     {
         $config = $this->getConfig();
-        return $this->user = (string)$config->user;
+        return $this->user = (string) $config->user;
     }
 
     /**
      * @return string
      */
-    protected function getPassword()
+    public function getPassword()
     {
         $config = $this->getConfig();
-        return $this->password = (string)$config->password;
+        return $this->password = (string) $config->password;
     }
 }

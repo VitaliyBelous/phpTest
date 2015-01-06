@@ -7,10 +7,10 @@ $studio = $studios->getStudio();
 ?>
 <!DOCTYPE html>
 <html>
-<?php include "view/template/head.php"?>
+<?php include "view/template/head.php" ?>
 <body>
     <div class="wrapper">
-        <?php include "view/template/header.php"?>
+        <?php include "view/template/header.php" ?>
         <div class="main">
             <div class="content">
                 <h1>Actors and studios</h1>
@@ -46,10 +46,10 @@ $studio = $studios->getStudio();
                     </div>
                 </div>
                 <a href="/act_stud.php" class="link-home">Previous</a>
-                <a href="/index.php" class="link-home">Home</a>
+                <a href="/web/index.php" class="link-home">Home</a>
             </div>
         </div>
-        <?php include "view/template/footer.php"?>
+        <?php include "view/template/footer.php" ?>
     </div>
 </body>
 </html>

@@ -2,8 +2,6 @@
 
 namespace Model;
 
-include($_SERVER['DOCUMENT_ROOT'] . '/classloader.php');
-
 class Studios extends Database
 {
     /**

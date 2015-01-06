@@ -1,10 +1,10 @@
 <?php
 
-namespace Model;
+namespace Vitaly\Model;
 
-include($_SERVER['DOCUMENT_ROOT'] . '/classloader.php');
+use Vitaly\Db\Model;
 
-class Actors extends Database
+class Actors extends Model
 {
     /**
      * @return bool|\PDOStatement
