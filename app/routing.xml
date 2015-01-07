@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<routes>
+    <route>
+        <url>/</url>
+        <controller>Index</controller>
+        <action>index</action>
+    </route>
+    <route>
+        <url>fee</url>
+        <controller>Actor</controller>
+        <action>index</action>
+    </route>
+    <route>
+        <url>studios</url>
+        <controller>Studio</controller>
+        <action>index</action>
+    </route>
+    <route>
+        <url>studios/actors</url>
+        <controller>Studio</controller>
+        <action>find</action>
+    </route>
+</routes>
