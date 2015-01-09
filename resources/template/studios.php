@@ -7,8 +7,8 @@ include ('head.php');
     <?php include ('header.php'); ?>
     <div class="main">
         <div class="content">
-            <h1>Studios and actors</h1>
-            <form action="/studios/actors" method="post">
+            <h1 align="center">Studios and actors</h1>
+            <form action="<?php echo $this->getFormUrl()?>" method="post">
                 <label for="select1">Select studio:</label>
                 <p><select size="1" name="studio" id="select1">
                         <option></option>
@@ -38,7 +38,7 @@ include ('head.php');
         <!--        --><?php //$foo = false; ?>
                 </table>
             </div>
-            <div class="links">
+            <div class="link-home">
                 <a href = '/'>Home</a>
             </div>
         </div>

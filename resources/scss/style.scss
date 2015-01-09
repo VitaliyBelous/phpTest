@@ -28,7 +28,8 @@ html, body {
 .content {
     width: 1000px;
     margin: auto;
-    height: 100%;
+    min-height: 1px;
+    max-height: 100%;
     h1 {
         border: dotted 1px red;
     }

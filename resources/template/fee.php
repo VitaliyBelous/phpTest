@@ -7,7 +7,7 @@
         <?php include ('header.php'); ?>
         <div class="main">
             <div class="content">
-                <h1>Actors fee</h1>
+                <h1 align="center">Actors fee</h1>
                 <div class="table-row">
                     <table border="1">
                         <?php if ($params): ?>

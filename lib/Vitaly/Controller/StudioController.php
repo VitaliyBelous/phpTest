@@ -21,4 +21,8 @@ class StudioController extends DefaultController
             return $this->redirectUrl('studios');
         }
     }
+    public function getFormUrl()
+    {
+        return $this->getBaseUrl() . "studios/actors";
+    }
 }
