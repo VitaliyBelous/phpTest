@@ -22,7 +22,6 @@
                                 </tr>
                             <?php endforeach; ?>
                         <?php endif; ?>
-    <!--                --><?php //$foo = false; ?>
                     </table>
                 </div>
                 <div class="link-home">
