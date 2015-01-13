@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-    var themeDir = '../view/skin/';
+    var themeDir = '../../';
 
     var gruntConfig = {
         pkg: grunt.file.readJSON('package.json'),
@@ -9,21 +9,21 @@ module.exports = function(grunt) {
                     livereload: true
                 },
                 files: [
-                    themeDir + 'css/{,**/}*.css',
+                    themeDir + '/css/{,**/}*.css',
                     themeDir + 'js/{,**/}*.min.js',
                     themeDir + 'images/{,**/}*.{png,jpg,gif}'
                 ]
             },
             compass: {
-                files: themeDir + 'scss/{,**/}*.scss',
+                files: themeDir + 'resources/scss/{,**/}*.scss',
                 tasks: 'compass:theme'
             }
         },
         compass: {
             theme: {
                 options: {
-                    sassDir: themeDir + 'scss',
-                    cssDir: themeDir + 'css',
+                    sassDir: themeDir + 'resources/scss',
+                    cssDir: themeDir + 'web/css',
                     environment: 'development',
                     outputStyle: 'expanded',
                     relativeAssets: true

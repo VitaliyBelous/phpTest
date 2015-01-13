@@ -1,12 +1,12 @@
-/* line 1, ../scss/style.scss */
+/* line 1, ../../resources/scss/_content.scss */
 html, body {
   height: 100%;
   font: 11px Tahoma, Sans-serif;
-  background-color: #ffffff;
+  background-color: white;
   width: 100%;
 }
 
-/* line 8, ../scss/style.scss */
+/* line 8, ../../resources/scss/_content.scss */
 .wrapper {
   min-height: 100%;
   position: relative;
@@ -14,65 +14,71 @@ html, body {
   margin: auto;
 }
 
-/* line 15, ../scss/style.scss */
+/* line 15, ../../resources/scss/_content.scss */
 .main {
   padding-bottom: 60px;
 }
 
-/* line 19, ../scss/style.scss */
+/* line 19, ../../resources/scss/_content.scss */
 .header {
-  background-color: darkslateblue;
+  background-color: #483d8d;
   height: 100px;
 }
-/* line 22, ../scss/style.scss */
+/* line 22, ../../resources/scss/_content.scss */
 .header p {
   font-size: 20px;
   padding-top: 35px;
 }
+@media screen and (max-width: 700px) {
+  /* line 19, ../../resources/scss/_content.scss */
+  .header {
+    background: yellow;
+  }
+}
 
-/* line 28, ../scss/style.scss */
+/* line 32, ../../resources/scss/_content.scss */
 .content {
   width: 1000px;
   margin: auto;
   min-height: 1px;
   max-height: 100%;
 }
-/* line 32, ../scss/style.scss */
+/* line 37, ../../resources/scss/_content.scss */
 .content h1 {
   border: dotted 1px red;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 42, ../../resources/scss/_content.scss */
 .links {
   margin-top: 20px;
   padding: 5px 0;
-  border: 1px solid darkred;
+  border: 1px solid red;
 }
-/* line 41, ../scss/style.scss */
+/* line 46, ../../resources/scss/_content.scss */
 .links a {
   margin: 0 200px;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 51, ../../resources/scss/_content.scss */
 table {
   table-layout: fixed;
   width: 100%;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 56, ../../resources/scss/_content.scss */
 th {
   color: #000099;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 60, ../../resources/scss/_content.scss */
 form {
   margin: 10px 0;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 64, ../../resources/scss/_content.scss */
 .footer {
   width: 1000px;
-  background-color: darkslateblue;
+  background-color: #483d8d;
   position: absolute;
   bottom: 0;
   height: 50px;

@@ -1,0 +1,7 @@
+@mixin breakpoint($parameter, $value) {
+  @if ($parameter == 'max-width' or $parameter == 'min-width') {
+    @media screen and ($parameter: $value) {
+      @content;
+    }
+  }
+}

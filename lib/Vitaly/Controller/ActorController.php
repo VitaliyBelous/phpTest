@@ -2,9 +2,10 @@
 
 namespace Vitaly\Controller;
 
+use Vitaly\Http\Response;
 use Vitaly\Model\Actors as Actors;
 
-class ActorController extends DefaultController
+class ActorController extends Response
 {
     public function indexAction()
     {

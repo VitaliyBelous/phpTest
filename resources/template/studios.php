@@ -8,10 +8,10 @@ include ('head.php');
     <div class="main">
         <div class="content">
             <h1 align="center">Studios and actors</h1>
-            <form action="<?php echo $this->getFormUrl()?>" method="post">
+            <form action="<?php echo $this->getFormUrl()?>" method="post" id="myForm">
                 <label for="select1">Select studio:</label>
                 <p><select size="1" name="studio" id="select1">
-                        <option></option>
+                        <option ></option>
                         <option value="Warner Brothers">Warner Brothers</option>
                         <option value="New Line Cinema">New Line Cinema</option>
                         <option value="Carolco Pictures">Carolco Pictures</option>
@@ -38,7 +38,7 @@ include ('head.php');
                 </table>
             </div>
             <div class="link-home">
-                <a href = '/'>Home</a>
+            <a href = '/'>Home</a>
             </div>
         </div>
     </div>

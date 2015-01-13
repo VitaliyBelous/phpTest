@@ -2,9 +2,10 @@
 
 namespace Vitaly\Controller;
 
+use Vitaly\Http\Response;
 use Vitaly\Model\Studios as Studios;
 
-class StudioController extends DefaultController
+class StudioController extends Response
 {
     public function indexAction()
     {
@@ -16,13 +17,22 @@ class StudioController extends DefaultController
         if ($_POST) {
             $studioName = $_POST['studio'];
             $studios = new Studios();
-            return $this->renderTemplate('studios.php', $studios->getStudio($studioName));
+            $selectedStudios = $studios->getStudio($studioName);
+            if($_POST['isAjax']) {
+                return json_encode($selectedStudios);
+            } else {
+                return $this->renderTemplate('studios.php', $selectedStudios);
+            }
         } else {
             return $this->redirectUrl('studios');
         }
     }
+
+
     public function getFormUrl()
     {
         return $this->getBaseUrl() . "studios/actors";
     }
+
 }
+
